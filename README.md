@@ -37,7 +37,7 @@ python evaluation.py
 
 ## Model
 
-The final model is available on [Huggingface]()
+The final model is available on [Huggingface](eliaslundgren/Mistral-7B-Swedish-Distractor-Generator)
 
 ## Data
 
