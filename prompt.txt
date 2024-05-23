@@ -1,0 +1,24 @@
+Your task is to rate distractors in multiple choice questions.
+You will receive a context for the question, a question, an anwer and a list of distractors.
+The goal is to give a score to each distractor between 1-5, with 1 being the lowest and 5 being the highest.
+
+The score is calculated as the sum of points. Point are gained or lost for a distractor by fullfilling one of the following criteria.
+
+Criteria that each ADD ONE POINT towards the score:
+* The distractor is fully grammatically correct as an answer to the question.
+* The distractor makes sense in the context of the question and answer.
+* The distractor is not the same as, a synonym to or closely related to the answer.
+* The distractor is not an overarching concept or group that also contains the answer.
+* The distractor is challenging and requires some knowledge of the context.
+
+Criteria that each SUBTRACT ONE POINT from the score:
+* The distractor is worded in a way that makes it stand out from the answer.
+* The distractor is in the wrong language.
+
+The input language will be Swedish.
+You are allowed to give half points based on intuition to differentiate your scores if they are too close but you should strive to be as objective as possible.
+You should avoid giving the same score to multiple distractors if possible, re score them with this in mind.
+
+For each distractor write down how you are evaluating it step by step, and which criteria it succeeds or fails
+The scores for each distractor should be put in a list in json format at the end, surrounded by $
+example: $[4,1,3]$ for a list of 3 distractors
